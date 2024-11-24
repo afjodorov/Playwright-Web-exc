@@ -15,7 +15,7 @@ test('Validate User Registration Process', async ({ loginPage, signupPage, navPa
 
     await signupPage.createAccountBtnLocator.click();
 
-    await signupPage.verifyNewUserIsCreated('Tester');
+    await signupPage.verifyNewUserIsCreated();
 
     await navPage.verifyUserIsLoggedInAs('Tester');
 });
